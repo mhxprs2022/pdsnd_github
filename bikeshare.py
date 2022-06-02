@@ -11,6 +11,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'washington': 'washington.csv'}
 
 # Permanently changes the pandas settings
+# This setting will change the display of output data on the commandline
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 
