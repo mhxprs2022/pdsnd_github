@@ -1,4 +1,5 @@
 ### Project Version Control by git
+git is used for version control
 
 ### Created on 6/1/2022
 
@@ -9,5 +10,5 @@ This project uses bikeshare.py as an example to practice version control skills 
 bikeshare.py
 
 ### Credits
-Udacity nanodegree
+Udacity nanodegree for Python Data Analysis
 
