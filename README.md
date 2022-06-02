@@ -1,17 +1,13 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+### Project Version Control by git
 
-### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+### Created on 6/1/2022
 
 ### Description
-Describe what your project is about and what it does
+This project uses bikeshare.py as an example to practice version control skills with following topics:  fork repository, clone repository, staging, commit, push, branch, merge
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity nanodegree
 
