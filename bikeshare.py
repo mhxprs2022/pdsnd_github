@@ -89,6 +89,8 @@ def load_data(city, month, day):
     "add two new columns (month, day of week) to the data frame "
     "so that the program can filter based on month and day of week"
     print(city, month, day)
+
+    # read data from the corresponding csv file using pandas read_csv
     df = pd.read_csv(CITY_DATA[city.lower()])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
