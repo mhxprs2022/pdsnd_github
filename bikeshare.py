@@ -137,7 +137,10 @@ def load_data(city, month, day):
 
     'This print 5 rows at a time, change all 5s to 10s if you want to print 10 rows at a time'
     'This also can be changed to a function which take df and n as parameter'
-    number_of_loops = int(len(df)/5) + 1
+    if len(df) % 5 == 0:
+        number_of_loops = len(df)/5
+    else:
+        number_of_loops = int(len(df)/5) + 1
     i = 0
     j = 5
     loop_counter = 1
