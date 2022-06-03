@@ -91,6 +91,8 @@ def load_data(city, month, day):
     "add two new columns (month, day of week) to the data frame "
     "so that the program can filter based on month and day of week"
     print(city, month, day)
+
+    # read data from the corresponding csv file using pandas read_csv
     df = pd.read_csv(CITY_DATA[city.lower()])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
@@ -139,7 +141,10 @@ def load_data(city, month, day):
 
     'This print 5 rows at a time, change all 5s to 10s if you want to print 10 rows at a time'
     'This also can be changed to a function which take df and n as parameter'
-    number_of_loops = int(len(df)/5) + 1
+    if len(df) % 5 == 0:
+        number_of_loops = len(df)/5
+    else:
+        number_of_loops = int(len(df)/5) + 1
     i = 0
     j = 5
     loop_counter = 1
