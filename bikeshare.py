@@ -17,7 +17,7 @@ pd.set_option('display.width', None)
 
 def get_filters():
     """
-    thsi function require user to specify a city, month, and day to analyze.
+    this function require user to specify a city, month, and day to analyze.
 
     Returns:
         (str) city - name of the city to analyze
@@ -40,6 +40,7 @@ def get_filters():
             print("Someting strange happening {}".format(e))
 
     # get user input for month (all, january, february, ... , june)
+    # month user short form 'jan', 'feb', ...
     while True:
         try:
             month = input("Please enter month 'Jan', 'Feb', 'Mar', 'Apr', "
@@ -57,6 +58,7 @@ def get_filters():
             print("Something strnage happening {}".format(e))
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+    # day of week use short form:  mon, tue, wed, .... case insensitive
     while True:
         day = input("\nPlease enter either Sun, Mon, Tue, Wed, Thu, Fri, Sat, or All - Type 'q' to quit: ")
         if (day.lower() == 'sun' or day.lower() == 'mon' or day.lower() == 'tue' or
